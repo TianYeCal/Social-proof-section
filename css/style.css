@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: League Spartan, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+body {
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.headline {
+  text-align: center;
+}
+.title {
+  font-size: 40px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 20px;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.4;
+  color: hsl(303, 10%, 53%);
+}
+.rates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rate {
+  width: 100%;
+  background-color: hsla(302, 38%, 81%, 0.116);
+  border-radius: 9px;
+  text-align: center;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.stars {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.rate-text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.testimonial {
+  padding: 30px 20px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 9px;
+}
+.testimonial-profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profile-pic img {
+  height: 45px;
+  border-radius: 50%;
+}
+.name {
+  display: block;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.id {
+  font-size: 12px;
+  color: hsl(333, 80%, 67%);
+}
+.testimonial-comment {
+  font-size: 1.5;
+  line-height: 1.8;
+}
+@media (min-width: 600px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    padding: 50px 100px;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 800px;
+  }
+  .headline {
+    margin-top: 30px;
+    text-align: left;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .rates {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .rate {
+    flex-direction: row;
+    padding: 20px 40px;
+    gap: 20px;
+    align-items: center;
+  }
+  .rate:nth-child(2) {
+    margin-left: 50px;
+  }
+  .rate:nth-child(3) {
+    margin-left: 100px;
+  }
+  .testimonials {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+  }
+  .testimonial {
+    max-height: 80%;
+  }
+  .testimonial:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .testimonial:nth-child(3) {
+    margin-top: 60px;
+  }
+}
