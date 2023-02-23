@@ -145,4 +145,8 @@ body {
   .testimonial:nth-child(3) {
     margin-top: 60px;
   }
+  .attribution {
+    text-align: center;
+    grid-column: 1/-1;
+  }
 }
